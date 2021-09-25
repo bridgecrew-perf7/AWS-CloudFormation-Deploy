@@ -283,7 +283,7 @@ Resources:
           sudo aws s3 cp s3://udacity-demo-1/udacity.zip /var/www/html
           sudo unzip -o udacity.zip
           sudo systemctl restart httpd
-      ImageId: ami-005bdb005fb00e791
+      ImageId: ami-0c2d06d50ce30b442
       IamInstanceProfile: !Ref ProfileWithRolesForOurApp
       SecurityGroups:
         - Ref: WebServerSecGroup
